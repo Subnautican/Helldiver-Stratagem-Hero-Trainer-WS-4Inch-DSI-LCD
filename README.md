@@ -20,6 +20,7 @@ sudo ./install.sh
 After this everything should be installed correctly. A new desktop icon will appear on your desktop, called 'Start Stratagem Hero'. Click on this icon and wait a few seconds, after a while the website should open and the application should load. (This also works offline, so without internet!) 
 
 When the application is open, click on the gear icon in the right top of the application screen, a side menu bar will open. Scroll all the way down, and click 'Enter fullscreen'. Now the application should have loaded in full screen. To exit, repeat the same steps as before, now it will say 'Exit fullscreen'. 
+
 *It is important to note that entering fullscreen via the standard web browser settings will cause the 'Exit fullscreen' button to not function properly, thus locking you in the application and requiring a hard restart. To avoid this, do not use the web browser's built in full screen button and only use the full screen button located in the application's settings.*
 
 ## Trouble Shooting
