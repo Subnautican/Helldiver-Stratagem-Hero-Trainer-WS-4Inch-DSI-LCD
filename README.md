@@ -13,8 +13,11 @@ This Github repository was made to use with the hardware mentioned above, for co
 Go into the terminal window of your Raspberry Pi, then type:
 
 git clone https://github.com/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD.git
+
 cd Stratagem-Hero-Trainer-4Inch-LCD/
+
 sudo chmod +x install.sh
+
 sudo ./install.sh
 
 After this everything should be installed correctly. A new desktop icon will appear on your desktop, called 'Start Stratagem Hero'. Click on this icon and wait a few seconds, after a while the website should open and the application should load. (This also works offline, so without internet!) 
@@ -35,12 +38,19 @@ When the application is open, click on the gear icon in the right top of the app
 -If the error with the text something along the lines of 'Unable to find file or directory' pops up, it most likely means that your file paths are not correct. For this repository I used the standard account name one would get when flashing a new OS, which is the account name 'pi'. If this is not the same with your account name, it needs to be changed. You can do this by right clicking the desktop icon, and select 'Text editor'. This will then open a window, with this code:
 
 [Desktop Entry]
+
 Version=1.0
+
 Type=Application
+
 Name=Start Stratagem Hero
+
 Comment=Starts the Stratagem Hero Trainer server
+
 Exec=/home/pi/Stratagem-Hero-Trainer/start_server.sh
+
 Icon=/home/pi/Stratagem-Hero-Trainer/icons/desktop-icon.png
+
 Terminal=true
 
 In here you need to change the 'pi' to the right name of your own account, and save the file. It should have resolved the issue.
