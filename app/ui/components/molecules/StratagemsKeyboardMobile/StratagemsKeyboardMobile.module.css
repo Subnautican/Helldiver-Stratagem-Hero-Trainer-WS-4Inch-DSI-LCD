@@ -1,0 +1,85 @@
+.keyboardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 0.5rem; /* Adjusted gap to accommodate wider buttons */
+}
+
+.button {
+  --button-width: 120px; /* Increased button width */
+  --button-height: 65px; /* Reverted height to original */
+  --bg-color: #f1f1f1;
+  --box-color: #e2e2e2;
+  --color: #525252;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 0 0 var(--box-color);
+  background: var(--bg-color);
+  color: var(--color);
+  border-bottom: 4px solid var(--blue-night);
+}
+
+.button:active {
+  border-color: var(--bg-color);
+  box-shadow: 0 3px 0 0 var(--bg-color);
+  transform: translateY(2px);
+}
+
+.icon {
+  --rotate: 0deg;
+
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transform: rotate(var(--rotate));
+}
+
+.button:active .icon {
+  top: 3px;
+  transform: scale(0.98) rotate(var(--rotate));
+}
+
+.up {
+  --rotate: 0deg;
+}
+
+.left {
+  --rotate: -90deg;
+}
+
+.right {
+  --rotate: 90deg;
+}
+
+.down {
+  --rotate: 180deg;
+}
+
+.key-up {
+  grid-column: 2 / span 1;
+}
+
+.key-down {
+  grid-column: 2 / span 1;
+}
+
+.key-left {
+  grid-column: 1 / span 1;
+}
+
+.key-right {
+  grid-column: 3 / span 1;
+}
+
+@media (max-width: 340px) {
+  .button {
+    --button-width: 100px; /* Increased width for small screens */
+    --button-height: 65px; /* Reverted height to original */
+  }
+}

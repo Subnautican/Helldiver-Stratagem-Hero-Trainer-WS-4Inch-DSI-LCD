@@ -1,0 +1,124 @@
+.container {
+  --size-card: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-card);
+  height: var(--size-card);
+}
+
+.icon {
+  --size-icon: 55px;
+
+  height: var(--size-icon);
+  width: var(--size-icon);
+}
+
+.active {
+  --size-card: 120px;
+  --border-size: 3px;
+
+  position: relative;
+  top: var(--border-size);
+  border: var(--border-size) solid var(--yellow);
+}
+
+.active .icon {
+  --size-icon: 95px;
+}
+
+/* @media (width > 1920px) {
+  .container {
+    --size-card: 146px;
+  }
+  
+  .icon {
+    --size-icon: 90px;
+  }
+
+  .active {
+    --size-card: 190px;
+  }
+
+  .active .icon {
+    --size-icon: 150px;
+  }
+} */
+
+.list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+  overflow: auto hidden;
+}
+
+/* @media (width > 1920px) {
+  .list {
+    max-width: 1000px;
+  }
+} */
+
+.list::-webkit-scrollbar {
+  height: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: #262626;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: var(--taupe);
+}
+
+.list > * {
+  flex: 0 0 auto;
+}
+
+.success .icon {
+  animation: blink-success 0.5s;
+}
+
+/* ANIMATION */
+@keyframes blink-success {
+  0% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* @media (width <= 1024px) { */
+  .icon {
+    --size-icon: 45px;
+  }
+
+  .active {
+    --size-card: 100px;
+  }
+
+  .active .icon {
+    --size-icon: 70px;
+  }
+
+  .list {
+    gap: 0.5rem;
+  }
+
+  .list > *:first-child {
+    margin-left: 1rem;
+  }
+
+  .list > *:last-child {
+    margin-right: 0.25rem;
+  }
+/* } */

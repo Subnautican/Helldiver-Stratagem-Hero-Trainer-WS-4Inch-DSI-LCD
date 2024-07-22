@@ -1,0 +1,110 @@
+.large {
+  --size-icon: 40px;
+}
+
+.small {
+  --size-icon: 20px;
+}
+
+.icon {
+  --color-icon: var(--white);
+  --rotation: 0deg;
+
+  height: var(--size-icon);
+  width: var(--size-icon);
+  color: var(--color-icon);
+  transform: rotate(var(--rotation));
+}
+
+.right {
+  --rotation: 90deg;
+}
+
+.left {
+  --rotation: -90deg;
+}
+
+.up {
+  --rotation: 0deg;
+}
+
+.down {
+  --rotation: 180deg;
+}
+
+.active {
+  --color-icon: var(--yellow);
+
+  animation: size-success 0.2s;
+}
+
+.error {
+  animation: blink-error 0.3s;
+}
+
+/* LIST */
+
+.list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+/* @media (width > 1920px) {
+  .large {
+    --size-icon: 45px;
+  }
+
+  .small {
+    --size-icon: 25px;
+  }
+
+  .list {
+    gap: 1rem;
+  }
+} */
+
+/* @media (width <= 1024px) { */
+  .large {
+    --size-icon: 30px;
+  }
+
+  .small {
+    --size-icon: 17px;
+  }
+
+  .list {
+    gap: 0.5rem;
+  }
+/* } */
+
+/* ANIMATION */
+@keyframes blink-error {
+  0% {
+    color: var(--white);
+  }
+
+  75% {
+    color: var(--red);
+  }
+
+  100% {
+    color: var(--red);
+  }
+}
+
+@keyframes size-success {
+  0% {
+    transform: scale(1) rotate(var(--rotation));
+  }
+
+  50% {
+    transform: scale(1.05) rotate(var(--rotation));
+  }
+
+  100% {
+    transform: scale(1) rotate(var(--rotation));
+  }
+}
