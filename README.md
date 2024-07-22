@@ -24,7 +24,7 @@ The installation may give some warnings, but these can be ignored. It will work 
 
 After the installation, it will automatically reboot the system, to apply all changes made. The system will announce so in the terminal when it does.
 
-After this everything should be installed correctly. A new desktop icon will appear on your desktop, called 'Start Stratagem Hero'. Click on this icon and wait for a short while, after this the website should open and the application should load. Fully loading the application may sometimes take a bit longer then expected, it is normal. Just give it some time, eventually everything should start up fine. (This also works offline, so without internet!) 
+After this everything should be installed correctly. A new desktop icon will appear on your desktop, called 'Stratagem Hero'. Click on this icon and wait for a short while, after this the website should open and the application should load. Fully loading the application may sometimes take a bit longer then expected, it is normal. Just give it some time, eventually everything should start up fine. (This also works offline, so without internet!) 
 
 When the application is open, click on the gear icon in the right top of the application screen, a side menu bar will open. Scroll all the way down, and click 'Enter fullscreen'. Now the application should have loaded in full screen. To exit, repeat the same steps as before, now it will say 'Exit fullscreen'. 
 
