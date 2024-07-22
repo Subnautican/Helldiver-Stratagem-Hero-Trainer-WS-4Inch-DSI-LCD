@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Change directory to Stratagem-Hero-Trainer-master
-cd /home/pi/Stratagem-Hero-Trainer-4Inch-LCD-main/
+# Change directory to Stratagem-Hero-Trainer-4Inch-LCD
+cd /home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/
 
 # Run the development server
 npm run dev &
 
-# Wait for the server to start (adjust the sleep time as necessary)
+# Wait for the server to start
 sleep 10
 
 # Open the web application in the default browser
