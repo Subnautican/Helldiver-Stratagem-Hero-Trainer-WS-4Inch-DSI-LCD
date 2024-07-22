@@ -5,18 +5,6 @@ command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
 
-# Check if dos2unix is installed
-if command_exists dos2unix; then
-    echo "dos2unix is already installed."
-else
-    # Install dos2unix
-    sudo apt-get update
-    sudo apt-get install -y dos2unix
-fi
-
-# Convert this script to UNIX line endings
-dos2unix "$0"
-
 # Check if npm is installed
 if command_exists npm; then
     echo "npm is already installed."
@@ -42,18 +30,18 @@ sudo npm install next@canary --force
 sudo npm install react@beta --force
 
 # Create the desktop entry file
-sudo bash -c 'cat <<EOF > /home/pi/Desktop/start_server.desktop
+sudo bash -c 'cat <<EOF > /home/Subnautican/Desktop/start_server.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=Start Stratagem Hero
 Comment=Starts the Stratagem Hero Trainer server + application
-Exec=/home/pi/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
-Icon=/home/pi/Stratagem-Hero-Trainer-4Inch-LCD/icons/desktop-icon.png
+Exec=/home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
+Icon=/home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/icons/desktop-icon.png
 Terminal=true
 EOF'
 
 # Make the desktop entry executable
-sudo chmod +x /home/pi/Desktop/start_server.desktop
+sudo chmod +x /home/Subnautican/Desktop/start_server.desktop
 
 echo "Installation and setup complete."
