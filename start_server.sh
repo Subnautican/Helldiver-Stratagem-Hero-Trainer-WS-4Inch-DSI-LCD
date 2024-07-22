@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change directory to Stratagem-Hero-Trainer-4Inch-LCD
-cd /home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/
+cd /home/pi/Stratagem-Hero-Trainer-4Inch-LCD/
 
 # Run the development server
 npm run dev &
