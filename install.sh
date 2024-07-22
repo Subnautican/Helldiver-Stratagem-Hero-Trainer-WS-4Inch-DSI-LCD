@@ -30,21 +30,21 @@ sudo npm install next@canary --force
 sudo npm install react@beta --force
 
 # Create the desktop entry file with correct permissions
-sudo bash -c 'cat <<EOF > /home/Subnautican/Desktop/start_server.desktop
+sudo bash -c 'cat <<EOF > /home/pi/Desktop/start_server.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
 Name=Stratagem Hero
 Comment=Starts the Stratagem Hero Trainer server + application
-Exec=/home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
-Icon=/home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/icons/desktop-icon.png
+Exec=/home/pi/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
+Icon=/home/pi/Stratagem-Hero-Trainer-4Inch-LCD/icons/desktop-icon.png
 Terminal=true
 EOF'
 
 # Ensure the file has the correct ownership and permissions
-sudo chown Subnautican:Subnautican /home/Subnautican/Desktop/start_server.desktop
-sudo chmod +x /home/Subnautican/Desktop/start_server.desktop
-sudo chmod +x /home/Subnautican/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
+sudo chown pi:pi /home/pi/Desktop/start_server.desktop
+sudo chmod +x /home/pi/Desktop/start_server.desktop
+sudo chmod +x /home/pi/Stratagem-Hero-Trainer-4Inch-LCD/start_server.sh
 
 echo "Installation and setup complete. The system will now reboot."
 
